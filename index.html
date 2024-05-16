@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thaisreiis :)</title>
+    <link rel="icon" href="img/iconTR1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="leaves">
+       <!--  <div class="set">
+          <div>
+            <img src="img/leaf_01.png" alt="" />
+          </div>
+          <div>
+            <img src="img/leaf_02.png" alt="" />
+          </div>
+          <div>
+            <img src="img/leaf_03.png" alt="" />
+          </div>
+          <div>
+            <img src="img/leaf_04.png" alt="" />
+          </div>
+          <div>
+            <img src="img/leaf_01.png" alt="" />
+          </div>
+          <div>
+            <img src="img/leaf_02.png" alt="" />
+          </div>
+          <div>
+            <img src="img/leaf_03.png" alt="" />
+          </div>
+          <div>
+            <img src="img/leaf_04.png" alt="" />
+          </div>
+        </div> -->
+      </div>
+      <img src="img/bg.jpg" class="bg" />
+      <img src="img/girl.png" class="girl" />
+      <img src="img/trees.png" class="trees" />
+      <div class="container-fosco">
+
+        <div class="header">
+          <img src="img/eu.jpg" alt="Thais Reis">
+          <div class="introduction">
+              <h1>Olá, eu sou a<br>Thais Reis :)</h1>
+          </div>
+          <div class="buttons">
+              <button>Download CV_PT</button>
+              <button>Download CV_EN</button>
+          </div>
+          <div class="contact-info">
+              <p>Email: thais@gmail.com</p>
+              <p>Telefone: 41 99999999</p>
+              <p>LinkedIn | GitHub</p>
+          </div>
+          <div class="sobre-mim">
+              <h1>Software Developer<br> Student at @42Lisboa<br>Lisboa-PT</h1>
+          </div>
+      </div>
+       
+        
+        <h2>Nesse espaço, você encontra projetos desenvolvidos por mim.</h2>
+
+        <div class="section-button">
+        <div id="buttons">
+          <button id="web-button" class="button">Desenvolvimento Web Site</button>
+          <button id="mobile-button" class="button">Desenvolvimento Mobile</button>
+          <button id="java-button" class="button">Desenvolvimento Java</button>
+        </div>
+        
+        <div class="container" id="web-container">
+
+          <div class="web-content">
+
+              <div class="web-content-1">
+                <a href="http://www.moveistophouse.com.br" target="_blank">
+                  <img src="img/tophouse.png" alt="Imagem" class="clickable-image" width="100" height="100">
+                </a>
+                <p class="github-projeto">Código no github</p>
+              </div>
+
+              <div class="web-content-2">
+                <a href="http://www.moveistophouse.com.br" target="_blank">
+                  <img src="img/tophouse.png" alt="Imagem" class="clickable-image" width="100" height="100">
+                </a>
+                <p class="github-projeto">Código no github</p>
+              </div>
+
+              <div class="web-content-2">
+                <a href="http://www.moveistophouse.com.br" target="_blank">
+                  <img src="img/tophouse.png" alt="Imagem" class="clickable-image" width="100" height="100">
+                </a>
+                <p class="github-projeto">Código no github</p>
+              </div>
+
+       </div>
+        </div>
+        
+        <div class="container" id="mobile-container">
+          <p>Conteúdo de Desenvolvimento Mobile</p>
+        </div>
+      </div>
+
+      <div class="container" id="java-container">
+        <p>Conteúdo de Desenvolvimento Java</p>
+      </div>
+    </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const webButton = document.getElementById("web-button");
+      const mobileButton = document.getElementById("mobile-button");
+      const javaButton = document.getElementById("java-button");
+
+      const webContainer = document.getElementById("web-container");
+      const mobileContainer = document.getElementById("mobile-container");
+      const javaContainer = document.getElementById("java-container");
+    
+
+      webButton.addEventListener("click", () => {
+        webContainer.style.display = "block";
+        mobileContainer.style.display = "none";
+        webButton.classList.add("active");
+        mobileButton.classList.remove("active");
+      });
+
+      mobileButton.addEventListener("click", () => {
+        mobileContainer.style.display = "block";
+        webContainer.style.display = "none";
+        mobileButton.classList.add("active");
+        webButton.classList.remove("active");
+      });
+
+      
+    </script>
+  </body>
+</html>
